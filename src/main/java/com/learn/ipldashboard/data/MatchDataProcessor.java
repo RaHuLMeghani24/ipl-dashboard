@@ -1,6 +1,6 @@
 package com.learn.ipldashboard.data;
 
-import java.time.LocalDate;
+import java.time.LocalDate; 
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -41,6 +41,7 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match>{
 		  
 		  match.setTossWinner(matchInput.getToss_winner());
 		  match.setTossDecision(matchInput.getToss_decision());
+		  match.setWinner(matchInput.getWinner());
 		  match.setResult(matchInput.getResult());
 		  match.setResultMargin(matchInput.getResult_margin());
 		  
